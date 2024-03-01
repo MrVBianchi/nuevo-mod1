@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #212429;
+    font-family: "Monregular"; 
+}
+
+@font-face {
+    font-family: "Monregular";
+    src: url(Montserrat/static/Montserrat-Regular.ttf);
+}
+
+
+    
+
+a {
+    text-decoration: none;
+    
+}
+
+nav{
+    
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 32px;
+    padding: 8px 8%;
+    border-bottom: solid #212429;
+    border-bottom-width: thin;
+    
+}
+ nav ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    text-decoration-color: #212429;
+ }
+
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.gridcontainer {
+    max-width: 1280px;
+    border: 8px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-auto-rows: auto;
+    justify-content: space-between;
+    align-content: space-between;
+    justify-items: center;
+    gap: 16px;
+}
+main .gridcontainer {
+    margin: 0 auto;
+}
+
+img.cards {
+    border-radius: 5%;
+    vertical-align: bottom;
+
+}
+
+
+.imgpad {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    
+}
+.footitm p {
+    color: #ffffff;
+    margin: 10px;
+}
+.pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+footer {
+    background-color: #212429;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+.footitm {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    vertical-align: middle;
+
+}
