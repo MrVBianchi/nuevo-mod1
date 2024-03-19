@@ -9,8 +9,53 @@
     src: url(Montserrat/static/Montserrat-Regular.ttf);
 }
 
+@media only screen and (max-width: 920px){
 
+    header div.contenedor {
+        display: flex;
+        place-content: space-between;
+    }
+    #menu-check:not(:checked) \007E nav{
+        display: none;
+    }
+    #menu-check:checked \007E nav{
+        display: block;
+    }
+    #menu {
+        display: block;
+        color: #212429;
+        background-color: #ffffff;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+    #menu-cerrar {
+        display: none;
+    }
+    #menu-check:checked \007E label #menu-abrir {
+        display: none;
+    }
+    #menu-check:checked \007E label #menu-cerrar {
+        display: block;
+    }
+    header div.contenedor nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    }
+
+    main.gridcontainer{
+        grid-template-columns: auto;
+    }
+    footer {
+        grid-template-columns: auto;
+    }
+}
     
+#menu, #menu-check {
+    display: none;
+}
 
 a {
     text-decoration: none;
@@ -64,7 +109,11 @@ main .gridcontainer {
 img.cards {
     border-radius: 5%;
     vertical-align: bottom;
+    
 
+}
+.griditem:hover {filter: opacity(.5);
+transition: 1s;
 }
 
 
@@ -78,6 +127,8 @@ img.cards {
 .footitm p {
     color: #ffffff;
     margin: 10px;
+    vertical-align: middle;
+    margin-top: 10px;
 }
 .pie {
     display: flex;
