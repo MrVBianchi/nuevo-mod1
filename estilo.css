@@ -143,7 +143,9 @@ footer {
         display: none;
     }
 
-
+    .h2 {
+        font-size: x-large;
+    }
 
     .gridcontainer{
         grid-template-columns: 1fr;
