@@ -44,7 +44,7 @@ nav{
  }
 
 
-.header{
+.h2{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -142,7 +142,7 @@ footer {
         display: none;
     }
 
-    
+
 
     .gridcontainer{
         grid-template-columns: 1fr;
