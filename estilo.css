@@ -10,8 +10,6 @@
 }
 
 
-    
-
 a {
     text-decoration: none;
     
@@ -38,6 +36,12 @@ nav{
     text-decoration-color: #212429;
  }
 
+ header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ }
 
 
 .h2{
@@ -66,7 +70,10 @@ main .gridcontainer {
 img.cards {
     border-radius: 5%;
     vertical-align: bottom;
-
+    
+}
+.griditem:hover {filter: opacity(.5);
+transition: 1s;
 }
 
 
@@ -80,6 +87,8 @@ img.cards {
 .footitm p {
     color: #ffffff;
     margin: 10px;
+    vertical-align: middle;
+    margin-top: 10px;
 }
 .pie {
     display: flex;
@@ -104,5 +113,55 @@ footer {
     flex-wrap: row wrap;
     justify-content: space-between;
     vertical-align: middle;
+
+}
+
+@media screen and (max-width: 920px) {
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+    .icon-menu-burguer {
+        display: flex;
+        
+        align-content: center;
+        
+    }
+
+
+    .menu {
+        display: none;
+    
+    }
+    .icon-nav {
+        display: none;
+    }
+
+
+
+    .gridcontainer{
+        grid-template-columns: 1fr;
+    }
+    footer {
+        flex-direction: column;
+        height: fit-content;
+        border: 24px;
+    }
+    .footitm {
+
+        padding: 16px;
+        margin-bottom: 16px;
+        margin-left: 24px;
+        border-bottom: solid #ffffff;
+        border-bottom-width: thin ;
+        align-self: flex-start;
+    }
+    
 
 }
