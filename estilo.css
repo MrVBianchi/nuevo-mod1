@@ -29,6 +29,7 @@ nav{
     border-bottom: solid #212429;
     border-bottom-width: thin;
     
+    
 }
  nav ul{
     display: flex;
@@ -39,10 +40,11 @@ nav{
 
 
 
-.header{
+.h2{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    
 }
 
 .gridcontainer {
